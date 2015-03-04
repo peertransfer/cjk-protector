@@ -57,15 +57,28 @@
   &lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s1"><span class="pl-pds">"</span>submit<span class="pl-pds">"</span></span>&gt;
 &lt;/<span class="pl-ent">form</span>&gt;</pre></div>
 
-<div class="highlight highlight-javascript"><pre>$(<span class="pl-s1"><span class="pl-pds">"</span>:input<span class="pl-pds">"</span></span>).cjkProtector()</pre></div>
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s1"><span class="pl-pds">"</span>:input<span class="pl-pds">"</span></span>).cjkProtector();</pre></div>
 
 <h2>
 <a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h2>
 
 <h3>
+<a id="errorclass-string" class="anchor" href="#errorclass-string" aria-hidden="true"><span class="octicon octicon-link"></span></a>errorClass (string)</h3>
+
+<p>CSS class name added on input's wrapper <code>div</code> element when CJK characters are found.</p>
+
+<p><em>Default value is 'field_with_errors'</em></p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s1"><span class="pl-pds">"</span>:input<span class="pl-pds">"</span></span>).cjkProtector({
+  errorClass<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">"</span>cjk_error<span class="pl-pds">"</span></span>
+});</pre></div>
+
+<h3>
 <a id="errormessage-string" class="anchor" href="#errormessage-string" aria-hidden="true"><span class="octicon octicon-link"></span></a>errorMessage (string)</h3>
 
 <p>Error message displayed when CJK characters are found.</p>
+
+<p><em>Default value is 'Please use latin characters'</em></p>
 
 <div class="highlight highlight-javascript"><pre>$(<span class="pl-s1"><span class="pl-pds">"</span>:input<span class="pl-pds">"</span></span>).cjkProtector({
   errorMessage<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">"</span>CJK characters found!<span class="pl-pds">"</span></span>
@@ -75,6 +88,8 @@
 <a id="onerror-function" class="anchor" href="#onerror-function" aria-hidden="true"><span class="octicon octicon-link"></span></a>onError (function)</h3>
 
 <p>Called when CJK characters are found.</p>
+
+<p><em>Default value is empty</em></p>
 
 <div class="highlight highlight-javascript"><pre>$(<span class="pl-s1"><span class="pl-pds">"</span>:input<span class="pl-pds">"</span></span>).cjkProtector({
   <span class="pl-en">onError</span>: <span class="pl-st">function</span>() {
@@ -86,6 +101,8 @@
 <a id="onsuccess-function" class="anchor" href="#onsuccess-function" aria-hidden="true"><span class="octicon octicon-link"></span></a>onSuccess (function)</h3>
 
 <p>Called when CJK characters disappear.</p>
+
+<p><em>Default value is empty</em></p>
 
 <div class="highlight highlight-javascript"><pre>$(<span class="pl-s1"><span class="pl-pds">"</span>:input<span class="pl-pds">"</span></span>).cjkProtector({
   <span class="pl-en">onSuccess</span>: <span class="pl-st">function</span>() {
