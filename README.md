@@ -17,7 +17,7 @@ Protect your inputs/textareas from Chinese, Japanese and Korean (CJK) characters
 ```
 
 ```javascript
-$(":input").cjkProtector()
+$(":input").cjkProtector();
 ```
 
 ## Options
