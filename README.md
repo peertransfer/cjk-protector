@@ -1,6 +1,6 @@
 # cjkProtector jQuery plugin
 
-Protect your inputs/textareas from Chinese, Japanese and Korean (CJK) characters
+Protect your inputs/textareas from Chinese, Japanese and Korean (CJK) characters.
 
 ## Usage
 
@@ -24,7 +24,7 @@ $(":input").cjkProtector()
 
 ### errorMessage (string)
 
-Error message displayed when CJK characters are found
+Error message displayed when CJK characters are found.
 
 ```javascript
 $(":input").cjkProtector({
@@ -34,7 +34,7 @@ $(":input").cjkProtector({
 
 ### onError (function)
 
-Called when CJK characters are found
+Called when CJK characters are found.
 
 ```javascript
 $(":input").cjkProtector({
@@ -46,11 +46,11 @@ $(":input").cjkProtector({
 
 ### onSuccess (function)
 
-Called when CJK characters disappear
+Called when CJK characters disappear.
 
 ```javascript
 $(":input").cjkProtector({
-  onError: function() {
+  onSuccess: function() {
   	console.log('Valid characters!')
   }
 });
