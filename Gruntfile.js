@@ -18,6 +18,14 @@ module.exports = function(grunt) {
       }
     },
 
+    uglify: {
+      plugin: {
+        files: {
+          'dist/cjk_protector-min.js': ['dist/cjk_protector.js']
+        }
+      }
+    },
+
     jasmine: {
       src: "dist/*.js",
       options: {
@@ -28,7 +36,8 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks("grunt-contrib-coffee");
+  grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-jasmine")
 
-  grunt.registerTask("default", ["coffee", "jasmine"]);
+  grunt.registerTask("default", ["coffee", "uglify", "jasmine"]);
 }
