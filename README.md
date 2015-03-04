@@ -22,9 +22,23 @@ $(":input").cjkProtector()
 
 ## Options
 
+### errorClass (string)
+
+CSS class name added on input's wrapper `div` element when CJK characters are found.
+
+*Default value is 'field\_with\_errors'*
+
+```javascript
+$(":input").cjkProtector({
+  errorClass: "cjk_error"
+});
+```
+
 ### errorMessage (string)
 
 Error message displayed when CJK characters are found.
+
+*Default value is 'Please use latin characters'*
 
 ```javascript
 $(":input").cjkProtector({
@@ -35,6 +49,8 @@ $(":input").cjkProtector({
 ### onError (function)
 
 Called when CJK characters are found.
+
+*Default value is empty*
 
 ```javascript
 $(":input").cjkProtector({
@@ -47,6 +63,8 @@ $(":input").cjkProtector({
 ### onSuccess (function)
 
 Called when CJK characters disappear.
+
+*Default value is empty*
 
 ```javascript
 $(":input").cjkProtector({
