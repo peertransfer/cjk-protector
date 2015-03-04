@@ -7,7 +7,7 @@ Protect your inputs/textareas from Chinese, Japanese and Korean (CJK) characters
 ```html
 <form>
   <div>
-    <input type='text'>
+    <input type="text">
   </div>
   <div>
     <textarea></textarea>
@@ -39,7 +39,7 @@ Called when CJK characters are found.
 ```javascript
 $(":input").cjkProtector({
   onError: function() {
-  	console.log('CJK characters found!')
+  	console.log("CJK characters found!")
   }
 });
 ```
@@ -51,7 +51,7 @@ Called when CJK characters disappear.
 ```javascript
 $(":input").cjkProtector({
   onSuccess: function() {
-  	console.log('Valid characters!')
+  	console.log("Valid characters!")
   }
 });
 ```
