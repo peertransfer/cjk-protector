@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Protect inputs/textareas from Chinese, Japanese and Korean characters",
   "devDependencies": {
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-contrib-jasmine": "^0.8.2"
   },
   "scripts": {
     "test": "grunt travis"
@@ -13,7 +15,16 @@
     "url": "git://github.com/peertransfer/cjkProtector"
   },
   "keywords": [
-    "Chinese", "Japanese", "Korean", "input", "protect", "jasmine", "jquery", "plugin", "javascript", "coffeescript"
+    "Chinese",
+    "Japanese",
+    "Korean",
+    "input",
+    "protect",
+    "jasmine",
+    "jquery",
+    "plugin",
+    "javascript",
+    "coffeescript"
   ],
   "author": "peerTransfer",
   "license": "MIT",
