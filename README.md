@@ -73,3 +73,12 @@ $(":input").cjkProtector({
   }
 });
 ```
+
+## Compile and running the specs
+
+```bash
+$ npm install
+$ grunt
+```
+
+
