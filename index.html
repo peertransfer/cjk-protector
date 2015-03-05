@@ -24,12 +24,12 @@
       <div id="banner">
         <span id="logo"></span>
 
-        <a href="https://github.com/peertransfer/cjkProtector" class="button fork"><strong>View On GitHub</strong></a>
+        <a href="https://github.com/peertransfer/cjk-protector" class="button fork"><strong>View On GitHub</strong></a>
         <div class="downloads">
           <span>Downloads:</span>
           <ul>
-            <li><a href="https://github.com/peertransfer/cjkProtector/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/peertransfer/cjkProtector/tarball/master" class="button">TAR</a></li>
+            <li><a href="https://github.com/peertransfer/cjk-protector/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/peertransfer/cjk-protector/tarball/master" class="button">TAR</a></li>
           </ul>
         </div>
       </div><!-- end banner -->
@@ -43,6 +43,8 @@
 <a id="cjkprotector-jquery-plugin" class="anchor" href="#cjkprotector-jquery-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>cjkProtector jQuery plugin</h1>
 
 <p>Protect your inputs/textareas from Chinese, Japanese and Korean (CJK) characters.</p>
+
+<p><a href="http://travis-ci.org/peertransfer/cjk-protector"><img src="https://secure.travis-ci.org/peertransfer/cjk-protector.png" alt="Build Status"></a></p>
 
 <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
@@ -109,6 +111,26 @@
     <span class="pl-en">console</span><span class="pl-s3">.log</span>(<span class="pl-s1"><span class="pl-pds">"</span>Valid characters!<span class="pl-pds">"</span></span>)
   }
 });</pre></div>
+
+<h2>
+<a id="running-specs" class="anchor" href="#running-specs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Running specs</h2>
+
+<p>First, you have to install all the project dependencies:</p>
+
+<div class="highlight highlight-bash"><pre>$ npm install</pre></div>
+
+<p>and then execute:</p>
+
+<div class="highlight highlight-bash"><pre>$ grunt <span class="pl-s3">test</span></pre></div>
+
+<h2>
+<a id="compile-plugin" class="anchor" href="#compile-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compile plugin</h2>
+
+<p>Just execute:</p>
+
+<div class="highlight highlight-bash"><pre>$ grunt build</pre></div>
+
+<p>This will generate two versions of the plugin in the <code>dist</code> folder.</p>
       </section>
       <footer>
         <p>Project maintained by <a href="https://github.com/peertransfer">peertransfer</a></p>
