@@ -2,7 +2,7 @@
 
 Protect your inputs/textareas from Chinese, Japanese and Korean (CJK) characters.
 
-[![Build Status](https://secure.travis-ci.org/peertransfer/cjkProtector.png)](http://travis-ci.org/peertransfer/cjkProtector)
+[![Build Status](https://secure.travis-ci.org/peertransfer/cjk-protector.png)](http://travis-ci.org/peertransfer/cjk-protector)
 
 ## Usage
 
@@ -76,11 +76,26 @@ $(":input").cjkProtector({
 });
 ```
 
-## Compile and running the specs
+## Running specs
+
+First, you have to install all the project dependencies:
 
 ```bash
 $ npm install
-$ grunt
 ```
 
+and then execute:
 
+```bash
+$ grunt test
+```
+
+## Compile plugin
+
+Just execute:
+
+```bash
+$ grunt build
+```
+
+This will generate two versions of the plugin in the `dist` folder.
