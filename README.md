@@ -2,6 +2,8 @@
 
 Protect your inputs/textareas from Chinese, Japanese and Korean (CJK) characters.
 
+[![Build Status](https://secure.travis-ci.org/peertransfer/cjkProtector.png)](http://travis-ci.org/peertransfer/cjkProtector)
+
 ## Usage
 
 ```html
