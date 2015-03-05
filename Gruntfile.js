@@ -21,7 +21,7 @@ module.exports = function(grunt) {
     uglify: {
       plugin: {
         files: {
-          "dist/cjk_protector-min.js": ["dist/cjk_protector.js"]
+          "dist/cjk-protector-min.js": ["dist/cjk-protector.js"]
         }
       }
     },
