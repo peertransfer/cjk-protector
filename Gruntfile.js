@@ -33,7 +33,7 @@ module.exports = function(grunt) {
         "spec/javascripts/*.js"
       ],
       options: {
-        jshintrc: '.jshintrc'
+        jshintrc: ".jshintrc"
       }
     },
 
@@ -48,10 +48,12 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks("grunt-contrib-coffee");
   grunt.loadNpmTasks("grunt-contrib-uglify");
-  grunt.loadNpmTasks("grunt-contrib-jshint")
-  grunt.loadNpmTasks("grunt-contrib-jasmine")
+  grunt.loadNpmTasks("grunt-contrib-jshint");
+  grunt.loadNpmTasks("grunt-contrib-jasmine");
 
-  grunt.registerTask("test", ["jshint", "jasmine"])
-  grunt.registerTask("build", ["coffee", "uglify"])
+  grunt.registerTask("test", ["jshint", "jasmine"]);
+  grunt.registerTask("build", ["coffee", "uglify"]);
   grunt.registerTask("default", ["build", "test"]);
+
+  grunt.registerTask("travis", "test");
 }
