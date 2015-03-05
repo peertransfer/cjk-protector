@@ -54,6 +54,4 @@ module.exports = function(grunt) {
   grunt.registerTask("test", ["jshint", "jasmine"]);
   grunt.registerTask("build", ["coffee", "uglify"]);
   grunt.registerTask("default", ["build", "test"]);
-
-  grunt.registerTask("travis", "test");
 }
